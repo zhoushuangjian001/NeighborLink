@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:neighborlink/page/db/db_ping_page.dart';
 import 'package:neighborlink/page/main/main_page.dart';
 import 'package:neighborlink/router/page_path.dart';
 import 'package:neighborlink/page/login/login_page.dart';
 
 final appRouter = GoRouter(
-  initialLocation: PagePath.login,
+  initialLocation: PagePath.dbPing,
   routes: [
+    GoRoute(
+      path: PagePath.dbPing,
+      builder: (context, state) => const DbPingPage(),
+    ),
     GoRoute(
       path: PagePath.login,
       builder: (context, state) => const LoginPage(),
@@ -18,10 +23,7 @@ final appRouter = GoRouter(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
-            '页面不存在',
-            style: Theme.of(context).textTheme.headlineSmall,
-          ),
+          Text('页面不存在', style: Theme.of(context).textTheme.headlineSmall),
           const SizedBox(height: 8),
           Text(
             state.uri.toString(),

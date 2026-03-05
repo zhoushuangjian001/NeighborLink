@@ -5,9 +5,6 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder(
-      color: Colors.red,
-      child: Text('Login Page'),
-    );
+    return const Scaffold(body: Center(child: Text('Login')));
   }
 }

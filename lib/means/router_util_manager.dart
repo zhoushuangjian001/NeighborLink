@@ -6,4 +6,9 @@ abstract class RouterUtilManager {
   static void gotoLoginPage() {
     appRouter.replace(PagePath.login);
   }
+
+  /// 跳转到主页
+  static void gotoMainPage() {
+    appRouter.replace(PagePath.main);
+  }
 }

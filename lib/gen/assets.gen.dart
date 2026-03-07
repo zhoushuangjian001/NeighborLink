@@ -29,12 +29,20 @@ class $AssetsLottilesGen {
   LottieGenImage get dbLink =>
       const LottieGenImage('assets/lottiles/db_link.json');
 
+  /// File path: assets/lottiles/loading.json
+  LottieGenImage get loading =>
+      const LottieGenImage('assets/lottiles/loading.json');
+
+  /// File path: assets/lottiles/login.json
+  LottieGenImage get login =>
+      const LottieGenImage('assets/lottiles/login.json');
+
   /// File path: assets/lottiles/retry_db_link.json
   LottieGenImage get retryDbLink =>
       const LottieGenImage('assets/lottiles/retry_db_link.json');
 
   /// List of all assets
-  List<LottieGenImage> get values => [dbLink, retryDbLink];
+  List<LottieGenImage> get values => [dbLink, loading, login, retryDbLink];
 }
 
 class Assets {

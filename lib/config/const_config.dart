@@ -12,4 +12,7 @@ class ConstConfig {
 
   /// 数据库连接失败
   static const String dbConnectFailed = '数据库连接失败,请检查U盘是否插入,并确保U盘内有数据文件';
+
+  /// 登录页标题
+  static const String loginTitle = '坡头乡人员信息管理系统';
 }

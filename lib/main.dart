@@ -1,6 +1,7 @@
 import 'dart:io' show Platform;
 
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart' show ProviderScope;
 import 'package:neighborlink/router/app_router.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:window_manager/window_manager.dart';
@@ -26,18 +27,24 @@ class AppRoot extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      debugShowCheckedModeBanner: false,
-      routerConfig: appRouter,
-      builder: (context, child) {
-        return ResponsiveBreakpoints.builder(
-          breakpoints: [
-            const Breakpoint(start: 900, end: 1500, name: TABLET),
-            const Breakpoint(start: 1501, end: double.infinity, name: DESKTOP),
-          ],
-          child: child ?? const SizedBox.shrink(),
-        );
-      },
+    return ProviderScope(
+      child: MaterialApp.router(
+        debugShowCheckedModeBanner: false,
+        routerConfig: appRouter,
+        builder: (context, child) {
+          return ResponsiveBreakpoints.builder(
+            breakpoints: [
+              const Breakpoint(start: 900, end: 1500, name: TABLET),
+              const Breakpoint(
+                start: 1501,
+                end: double.infinity,
+                name: DESKTOP,
+              ),
+            ],
+            child: child ?? const SizedBox.shrink(),
+          );
+        },
+      ),
     );
   }
 }

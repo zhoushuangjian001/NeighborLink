@@ -8,6 +8,18 @@ abstract class ConstTextStyle {
     fontWeight: FontWeight.bold,
   );
 
+  /// 40号粗体
+  static TextStyle font40Bold = TextStyle(
+    fontSize: 40,
+    fontWeight: FontWeight.bold,
+  );
+
+  /// 35号粗体
+  static TextStyle font35Bold = TextStyle(
+    fontSize: 35,
+    fontWeight: FontWeight.bold,
+  );
+
   /// 30号粗体
   static TextStyle font30Bold = TextStyle(
     fontSize: 30,

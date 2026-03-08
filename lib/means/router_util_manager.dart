@@ -9,6 +9,6 @@ abstract class RouterUtilManager {
 
   /// 跳转到主页
   static void gotoMainPage() {
-    appRouter.replace(PagePath.main);
+    appRouter.replace(PagePath.village);
   }
 }

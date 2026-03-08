@@ -14,6 +14,7 @@ void main() async {
       minimumSize: Size(900, 600),
       center: true,
       backgroundColor: Colors.white,
+      title: '坡头乡人员信息管理系统',
     );
     await windowManager.waitUntilReadyToShow(options, () async {
       await windowManager.show();

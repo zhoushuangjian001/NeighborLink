@@ -5,4 +5,5 @@ abstract class IconfontManager {
 
   static const IconData password = IconData(0xe600, fontFamily: _fontFamily);
   static const IconData account = IconData(0xe879, fontFamily: _fontFamily);
+  static const IconData location = IconData(0xe61f, fontFamily: _fontFamily);
 }

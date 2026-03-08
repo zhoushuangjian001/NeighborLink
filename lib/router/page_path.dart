@@ -7,4 +7,7 @@ abstract class PagePath {
 
   /// 主页
   static const String main = '/main';
+
+  /// 村庄页
+  static const String village = '/village';
 }

@@ -15,4 +15,7 @@ class ConstConfig {
 
   /// 登录页标题
   static const String loginTitle = '坡头乡人员信息管理系统';
+
+  /// 村委标题
+  static const String villageTitle = '坡头乡乡村信息';
 }

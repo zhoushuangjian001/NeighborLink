@@ -15,11 +15,18 @@ import 'package:lottie/lottie.dart' as _lottie;
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
-  /// File path: assets/images/test.webp
-  AssetGenImage get test => const AssetGenImage('assets/images/test.webp');
+  /// File path: assets/images/female.png
+  AssetGenImage get female => const AssetGenImage('assets/images/female.png');
+
+  /// File path: assets/images/male.png
+  AssetGenImage get male => const AssetGenImage('assets/images/male.png');
+
+  /// File path: assets/images/village_cover.png
+  AssetGenImage get villageCover =>
+      const AssetGenImage('assets/images/village_cover.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [test];
+  List<AssetGenImage> get values => [female, male, villageCover];
 }
 
 class $AssetsLottilesGen {
@@ -33,6 +40,14 @@ class $AssetsLottilesGen {
   LottieGenImage get loading =>
       const LottieGenImage('assets/lottiles/loading.json');
 
+  /// File path: assets/lottiles/loading_data.json
+  LottieGenImage get loadingData =>
+      const LottieGenImage('assets/lottiles/loading_data.json');
+
+  /// File path: assets/lottiles/loading_fail.json
+  LottieGenImage get loadingFail =>
+      const LottieGenImage('assets/lottiles/loading_fail.json');
+
   /// File path: assets/lottiles/login.json
   LottieGenImage get login =>
       const LottieGenImage('assets/lottiles/login.json');
@@ -42,7 +57,14 @@ class $AssetsLottilesGen {
       const LottieGenImage('assets/lottiles/retry_db_link.json');
 
   /// List of all assets
-  List<LottieGenImage> get values => [dbLink, loading, login, retryDbLink];
+  List<LottieGenImage> get values => [
+    dbLink,
+    loading,
+    loadingData,
+    loadingFail,
+    login,
+    retryDbLink,
+  ];
 }
 
 class Assets {

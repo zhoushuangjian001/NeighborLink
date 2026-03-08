@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:neighborlink/page/db/db_ping_page.dart';
 import 'package:neighborlink/page/main/main_page.dart';
+import 'package:neighborlink/page/village/village_page.dart';
 import 'package:neighborlink/router/page_path.dart';
 import 'package:neighborlink/page/login/login_page.dart';
 
 final appRouter = GoRouter(
-  initialLocation: PagePath.dbPing,
+  initialLocation: PagePath.village,
   routes: [
     GoRoute(
       path: PagePath.dbPing,
@@ -17,6 +18,10 @@ final appRouter = GoRouter(
       builder: (context, state) => const LoginPage(),
     ),
     GoRoute(path: PagePath.main, builder: (context, state) => const MainPage()),
+    GoRoute(
+      path: PagePath.village,
+      builder: (context, state) => const VillagePage(),
+    ),
   ],
   errorBuilder: (context, state) => Scaffold(
     body: Center(

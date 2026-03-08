@@ -41,7 +41,7 @@ final class LoginPageVmodelProvider
   }
 }
 
-String _$loginPageVmodelHash() => r'd8e37654a4546589d115514bc0f34927fe8321cd';
+String _$loginPageVmodelHash() => r'6cdfbe8a67f87d6f772d16d193007edfd1ef8eb7';
 
 abstract class _$LoginPageVmodel extends $Notifier<LoginPageState> {
   LoginPageState build();
